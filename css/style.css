@@ -44,7 +44,7 @@
     -moz-box-shadow: 2px 14px 24px 2px rgba(0,0,0,0.75);
     box-shadow: 2px 14px 24px 2px rgba(0,0,0,0.75);
     width: 610px;
-    height: 220px;
+    min-height: 220px;
     margin: 0 auto;
     border: 2px solid #005ba4;
     border-radius:  10px;
@@ -56,6 +56,7 @@
     float: left;
     margin-left: 40px;
     margin-top: 14px;
+   
 
 }
 
@@ -74,9 +75,16 @@
 }
 .block__sidebar__item__list{
     border-bottom: 2px dotted #94ffea ;
+    width: 30%;
+     float: left;
+     margin-right: 15px;
+    
+
 }
 .block__sidebar__header__list{
     border-bottom: none;
+   
+    
 }
 .block__sidebar__item:hover{
     border-radius: 10px;
@@ -85,22 +93,27 @@
     border-bottom: none;
 }
 
+.block__sidebar__item__name{
+    float: left;
+    
+}
 
-.display{
+.block__display{
     position: relative;
     width: 400px;
     float: right;
     color: #94ffea;
 }
-.depozit, .income{
+.block__display__depozit, .block__display__income{
     text-align: left;
     font-size: 12px;
     padding:20px 0;
      font-style: italic;
     padding-left: 20px;
+    margin-left: 20px;
 
 }
-.depozit span, .income span{
+.block__display__depozit span, .block__display__income span{
     text-align: right;
     font-size: 32px;
     float: right;
@@ -130,7 +143,7 @@ input[type='range']::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-.depozit span{
+.block__display__depozit span{
     position: absolute;
     top: 80px;
     right: 20px;
@@ -138,10 +151,8 @@ input[type='range']::-webkit-slider-thumb {
     font-weight: 400;
 
 }
-.depozit, .income{
-   
-}
-.income span{
+
+.block__display__income span{
     position: absolute;
     top: 150px;
     right: 20px;
@@ -179,14 +190,4 @@ input[type='range']::-webkit-slider-thumb {
     -moz-box-shadow: 2px 8px 24px 2px rgba(0,0,0,0.75);
     box-shadow: 2px 8px 24px 2px rgba(0,0,0,0.75);
     background-color: rgba(18, 75, 125, 0.96);
-}
-.triangle{
-    display: inline-block;
-    transform: scaleX(2.5); /* Не забываем про префиксы */
-    transform: rotate(45deg);
-    color: #BADA55;
-    text-shadow:
-            0 2px 2px rgba(255,255,255,0.7),
-            0 10px 4px rgba(0,0,0,0.5);
-    font-size: 64px;
 }
